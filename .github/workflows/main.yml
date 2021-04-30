@@ -1,0 +1,22 @@
+name: NuGet Deployment
+
+on:
+  push:
+    branches: [ release ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Build and Deploy CrossInterfaceRokuDeviceDiscovery
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+          PROJECT_FILE_PATH: CrossInterfaceRokuDeviceDiscovery.fsproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
