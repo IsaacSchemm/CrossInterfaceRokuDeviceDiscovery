@@ -8,7 +8,7 @@
     <Copyright></Copyright>
     <RepositoryUrl>https://github.com/IsaacSchemm/CrossInterfaceRokuDeviceDiscovery</RepositoryUrl>
     <PackageProjectUrl>https://github.com/IsaacSchemm/CrossInterfaceRokuDeviceDiscovery</PackageProjectUrl>
-    <Version>1.0.0-rc1</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
