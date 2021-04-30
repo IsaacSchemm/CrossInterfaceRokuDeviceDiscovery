@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Isaac Schemm</Authors>
+    <Description>UDP discovery for RokuDotNet that allows selection of one or more network interfaces</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright></Copyright>
+    <RepositoryUrl>https://github.com/IsaacSchemm/CrossInterfaceRokuDeviceDiscovery</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/IsaacSchemm/CrossInterfaceRokuDeviceDiscovery</PackageProjectUrl>
+    <Version>1.0.0-rc1</Version>
   </PropertyGroup>
 
   <ItemGroup>
