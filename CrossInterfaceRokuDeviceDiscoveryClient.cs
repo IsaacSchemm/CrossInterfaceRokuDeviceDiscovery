@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CastHelper {
+namespace CrossInterfaceRokuDeviceDiscovery {
 	public sealed class CrossInterfaceRokuDeviceDiscoveryClient : IRokuDeviceDiscoveryClient {
 		private readonly IReadOnlyList<ExplicitInterfaceRokuDeviceDiscoveryClient> _clients;
 
