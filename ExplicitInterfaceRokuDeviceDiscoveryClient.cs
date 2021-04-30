@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CastHelper {
+namespace CrossInterfaceRokuDeviceDiscovery {
 	public sealed class ExplicitInterfaceRokuDeviceDiscoveryClient : IRokuDeviceDiscoveryClient {
 		private readonly HttpMessageHandler handler;
 		private readonly IPEndPoint endPoint;

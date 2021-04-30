@@ -14,4 +14,7 @@ Example usage:
         .Where(ip => ip.AddressFamily == AddressFamily.InterNetwork)
         .ToList();
     IRokuDeviceDiscoveryClient client = new CrossInterfaceRokuDeviceDiscoveryClient(addresses);
-    client.DiscoverDevicesAsync(context => Console.WriteLine(context.Device.Id));
+    await client.DiscoverDevicesAsync(async context => {
+        Console.WriteLine(context.Device.Id);
+        return false;
+    });
